@@ -4,7 +4,8 @@ var router = express.Router();
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.json({
-    envValue: process.env.MY_ENV || "unset"
+    envValue: process.env.MY_ENV || "unset",
+    edit: "Edited"
   });
 });
 
