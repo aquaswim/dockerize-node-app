@@ -1,0 +1,13 @@
+# https://docs.docker.com/compose/compose-file/
+version: '2'
+# services list
+services:
+  # service myapp
+  my-app:
+    build:
+      context: .
+      image: simple-node-app
+    ports:
+      - "3000:3000"
+    environment:
+      - MY_ENV=my-app-in-docker-compose
