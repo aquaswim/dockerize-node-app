@@ -4,14 +4,10 @@ version: '2'
 services:
   # service myapp
   my-app:
-    image: my-node-app
+    build:
+      context: .
+      image: simple-node-app
     ports:
       - "3000:3000"
     environment:
       - MY_ENV=my-app-in-docker-compose
-  my-app-lagi:
-    image: my-node-app
-    ports:
-      - "3001:3000"
-    environment:
-      - MY_ENV=my-app-in-docker-compose-2
