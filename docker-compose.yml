@@ -6,7 +6,7 @@ services:
   my-app:
     build:
       context: .
-      image: simple-node-app
+    image: simple-node-app
     ports:
       - "3000:3000"
     environment:
